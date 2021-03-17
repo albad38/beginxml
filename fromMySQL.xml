@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tt_test>
+<Humans><id>1</id><fname>Колокольцев</fname><sname>Юриий</sname><tname>Семенович</tname><job>Финансист</job><experience>20.0</experience></Humans>
+<Humans><id>2</id><fname>Мозговиков</fname><sname>Дмитрий</sname><tname>Харитонович</tname><job>Программист</job><experience>10.0</experience></Humans>
+<Humans><id>3</id><fname>Уланова</fname><sname>Зоя</sname><tname>Игоревна</tname><job>Бухгалтер</job><experience>34.0</experience></Humans>
+<Humans><id>4</id><fname>Елистратов</fname><sname>Николай</sname><tname>Александрович</tname><job>Продавец-консультант</job><experience>4.3</experience></Humans>
+<Humans><id>5</id><fname>Алексеева</fname><sname>Наталья</sname><tname>Романовна</tname><job>Администратор гостиницы</job><experience>6.8</experience></Humans>
+<Humans><id>6</id><fname>Шаповалов</fname><sname>Леонид</sname><tname>Владимирович</tname><job>Шеф-повар</job><experience>11.7</experience></Humans>
+<Humans><id>7</id><fname>Громовой </fname><sname>Вадим</sname><tname>Алексеевич</tname><job>Строитель</job><experience>12.0</experience></Humans>
+<Humans><id>8</id><fname>Дудочкина</fname><sname>Марина</sname><tname>Юрьевна</tname><job>Врач-окулист</job><experience>9.0</experience></Humans>
+<Humans><id>9</id><fname>Корнеев</fname><sname>Олег</sname><tname>Сергеевич</tname><job>Архитектор</job><experience>15.2</experience></Humans>
+<Humans><id>10</id><fname>Маркова</fname><sname>Галина</sname><tname>Петровна</tname><job>Стюардесса</job><experience>3.0</experience></Humans>
+</tt_test>
