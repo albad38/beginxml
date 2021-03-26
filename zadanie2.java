@@ -14,7 +14,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.css.ElementCSSInlineStyle;
 
 public class zadanie2 {
 
@@ -24,7 +23,7 @@ public class zadanie2 {
 		try {
 			Connection connection = getMySQLConnection(); 	//install connection
 			Statement statement = connection.createStatement();  //Class for SQL-query
-			ResultSet resultset = statement.executeQuery("LOAD XML INFILE 'C:/Users/badsa/eclipse-workspace/xmlproblem/toMySQL.xml' INTO TABLE humans ROWS IDENTIFIED BY '<human>';"); //Result data
+			ResultSet resultset = statement.executeQuery("LOAD XML INFILE 'C:/Users/badsa/eclipse-workspace/xmlproblem/toMySQL.xml' INTO TABLE humans ROWS IDENTIFIED BY '<humans>';"); //Result data
 			System.out.print("Connection installed!" + "\n" + "\n");  //console message about connection
 			
 			File importXML = new File("toMySQL.xml");		//file to reading
@@ -32,7 +31,7 @@ public class zadanie2 {
 			DocumentBuilder importDBuilder = importDBFactory.newDocumentBuilder();    //builder for parse XML
 			Document importdoc = importDBuilder.parse(importXML);    //parse XML
 			System.out.print("Root element: " + importdoc.getDocumentElement().getNodeName() + "\n" + "\n");   //root element
-			NodeList nodelist = importdoc.getElementsByTagName("human"); 
+			NodeList nodelist = importdoc.getElementsByTagName("humans"); 
 					
 			for (int i = 0; i < nodelist.getLength(); i++) { 	//cycle output XML content
 				Node node = nodelist.item(i);
@@ -75,3 +74,4 @@ public class zadanie2 {
 		return connection;
 	}
 }
+
