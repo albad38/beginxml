@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tt_test>
-	<humans><id>20</id><fname>Metel</fname><sname>Zhanna</sname><tname>Petrovna</tname><job>Journalist</job><experience>15</experience></humans>
-	<humans><id>21</id><fname>Letuchy</fname><sname>Semen</sname><tname>Borisovich</tname><job>Hauler</job><experience>11.50</experience></humans>
-	<humans><id>24</id><fname>Tinkova</fname><sname>Yulia</sname><tname>Agafonovna</tname><job>Cassier</job><experience>2</experience></humans>
-	<humans><id>42</id><fname>Polyakova</fname><sname>Svetlana</sname><tname>Mikhailovna</tname><job>Analytic</job><experience>11.50</experience></humans>
-	<humans><id>55</id><fname>Risovalkin</fname><sname>Fedor</sname><tname>Afanasievich</tname><job>Manager</job><experience>7</experience></humans>
-</tt_test>
