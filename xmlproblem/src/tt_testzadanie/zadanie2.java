@@ -1,16 +1,17 @@
-package tt_testzadanie;
+package tt_testzadanie;		//package
 
-import java.io.File;
-import java.sql.Connection;
+import java.io.File;		//library for working with files
+
+import java.sql.Connection;	//library for working with SQL
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilder;	//XML-library
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.w3c.dom.Document;
+import org.w3c.dom.Document;	//DOM-Library
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
