@@ -23,7 +23,8 @@ public class zadanie2 {
 		try {
 			Connection connection = getMySQLConnection(); 	//install connection
 			Statement statement = connection.createStatement();  //Class for SQL-query
-			ResultSet resultset = statement.executeQuery("LOAD XML INFILE 'C:/Users/badsa/eclipse-workspace/xmlproblem/toMySQL.xml' INTO TABLE humans ROWS IDENTIFIED BY '<humans>';"); //Result data
+			ResultSet resultset = statement.executeQuery("LOAD XML INFILE 'toMySQL.xml' INTO TABLE humans ROWS IDENTIFIED BY '<humans>';"); //Result data
+			//you can use that load link, if you already put this file on database location on ...xammp/mysql/data/'database' or use direct link.
 			System.out.print("Connection installed!" + "\n" + "\n");  //console message about connection
 			
 			File importXML = new File("toMySQL.xml");		//file to reading
