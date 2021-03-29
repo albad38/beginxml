@@ -2,13 +2,14 @@ package tt_testzadanie;		//package
 
 import java.io.File;		//library for working with files
 import java.io.FileWriter;
-import java.sql.Connection;  //library for working with SQL
+
+import java.sql.Connection;  	//library for working with SQL
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilder;	//XML-library
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
@@ -31,9 +32,9 @@ public class zadanie1 {
 			System.out.print("Connection installed!" + "\n" + "\n");  //console message about connection
 			
 			Statement statement = connection.createStatement();  //Class for SQL-query
-	        ResultSet resultset = statement.executeQuery("SELECT * FROM humans"); //Result data
+	        	ResultSet resultset = statement.executeQuery("SELECT * FROM humans"); //Result data
 	        	
-			System.out.print(resultset.getMetaData().getCatalogName(1));	//catalogname tt_test, корневой элемент
+			System.out.print(resultset.getMetaData().getCatalogName(1));	//catalogname tt_test, database
 			
 			System.out.println();
 			System.out.println();
@@ -65,10 +66,11 @@ public class zadanie1 {
 				String tname = resultset2.getString("tname"); 
 				String job = resultset2.getString("job"); 
 				String experience = resultset2.getString("experience");  //attributes
-			rootElement.appendChild(gethumans(forMySQL, id, fname, sname, tname, job, experience));			
+			
+				rootElement.appendChild(gethumans(forMySQL, id, fname, sname, tname, job, experience));			
 			}
 		
-			TransformerFactory tfact = TransformerFactory.newInstance();
+	    TransformerFactory tfact = TransformerFactory.newInstance();
             Transformer transformer = tfact.newTransformer();
             DOMSource source = new DOMSource(forMySQL);
             
